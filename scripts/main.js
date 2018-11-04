@@ -84,14 +84,14 @@ $(document).ready(function () {
 
     }
 
-    $('#engagement').load('../blog/engagement-gallery/ #featured_image');
-    $('#wedding').load('../blog/wedding-gallery/ #featured_image');
-    $('#maternity').load('../blog/maternity-gallery/ #featured_image');
-    $('#family').load('../blog/family-gallery/ #featured_image');
-    $('#newborn').load('../blog/newborn-gallery/ #featured_image');
-    $('#kids').load('../blog/kids-gallery/ #featured_image');
-    $('#senior').load('../blog/senior-gallery/ #featured_image');
-    $('#published').load('../blog/published-gallery/ #featured_image');
+//    $('#engagement').load('../blog/engagement-gallery/ #featured_image');
+//    $('#wedding').load('../blog/wedding-gallery/ #featured_image');
+//    $('#maternity').load('../blog/maternity-gallery/ #featured_image');
+//    $('#family').load('../blog/family-gallery/ #featured_image');
+//    $('#newborn').load('../blog/newborn-gallery/ #featured_image');
+//    $('#kids').load('../blog/kids-gallery/ #featured_image');
+//    $('#senior').load('../blog/senior-gallery/ #featured_image');
+//    $('#published').load('../blog/published-gallery/ #featured_image');
 
 
 
@@ -1445,157 +1445,157 @@ $(function () {
 }); //]]>
 //******************************************************************************
 
-//Galleries*********************************************************************
-$(function () {
-
-    var galleryShell = $('#gallery-pop');
-    var galleryBackground = $('#gallery-background');
-    var galleryFrame = $('#gallery-frame');
-    var gallery = $('.hover-link');
-
-    var engagementGallery = $('.gallery-thumb1');
-    var weddingGallery = $('.gallery-thumb2');
-    var maternityGallery = $('.gallery-thumb3');
-    var familyGallery = $('.gallery-thumb4');
-    var newbornGallery = $('.gallery-thumb5');
-    var kidsGallery = $('.gallery-thumb6');
-    var seniorGallery = $('.gallery-thumb7');
-    var charityGallery = $('.gallery-thumb8');
-
-    var h = $(window).height();
-    
-    galleryBackground.css('opacity', 0);
-    galleryBackground.css('pointer-events', 'none');
-
-    galleryShell.css('margin-top', h);
-
-    galleryShell.css('height', h);
-
-
-    $(window).on('resize', function () {
-        var h = $(window).height();
-        galleryShell.css('height', h);
-        galleryShell.css('margin-top', h);
-    });
-
-
-    gallery.click(function () {
-        galleryBackground.css('opacity', 1);
-        galleryBackground.fadeIn(500);
-//        galleryBackground.fadeIn("500", function () {
-//            galleryBackground.css('opacity', 0);
+////Galleries*********************************************************************
+//$(function () {
+//
+//    var galleryShell = $('#gallery-pop');
+//    var galleryBackground = $('#gallery-background');
+//    var galleryFrame = $('#gallery-frame');
+//    var gallery = $('.hover-link');
+//
+//    var engagementGallery = $('.gallery-thumb1');
+//    var weddingGallery = $('.gallery-thumb2');
+//    var maternityGallery = $('.gallery-thumb3');
+//    var familyGallery = $('.gallery-thumb4');
+//    var newbornGallery = $('.gallery-thumb5');
+//    var kidsGallery = $('.gallery-thumb6');
+//    var seniorGallery = $('.gallery-thumb7');
+//    var charityGallery = $('.gallery-thumb8');
+//
+//    var h = $(window).height();
+//    
+//    galleryBackground.css('opacity', 0);
+//    galleryBackground.css('pointer-events', 'none');
+//
+//    galleryShell.css('margin-top', h);
+//
+//    galleryShell.css('height', h);
+//
+//
+//    $(window).on('resize', function () {
+//        var h = $(window).height();
+//        galleryShell.css('height', h);
+//        galleryShell.css('margin-top', h);
+//    });
+//
+//
+//    gallery.click(function () {
+//        galleryBackground.css('opacity', 1);
+//        galleryBackground.fadeIn(500);
+////        galleryBackground.fadeIn("500", function () {
+////            galleryBackground.css('opacity', 0);
+////        });
+//
+//        //galleryShell.fadeIn(0);
+//
+//        /*galleryShell.animate({
+//            marginTop: 0
+//        }, {
+//            duration: 1000,
+//            queue: false
+//        });*/
+//
+//
+//    });
+//    
+//    
+//    window.onscroll = function () {
+//       if (galleryBackground.css('opacity') == 1) {
+//           
+//            galleryBackground.fadeOut("500", function () {
+//                galleryBackground.css('opacity', 0);
+//            });
+//           
+//       } 
+//    };
+//    
+//
+//    
+//    
+//    engagementGallery.click(function () {
+//        var href = "http://hungthemoonphotography.com/blog/engagement-gallery/#gallery-showcase";
+//        //galleryFrame.attr("src", href);
+//        $('#placeholder').animate({
+//            top: 0
+//        }, 750, function () {
+//            window.location.href = href;
 //        });
-
-        //galleryShell.fadeIn(0);
-
-        /*galleryShell.animate({
-            marginTop: 0
-        }, {
-            duration: 1000,
-            queue: false
-        });*/
-
-
-    });
-    
-    
-    window.onscroll = function () {
-       if (galleryBackground.css('opacity') == 1) {
-           
-            galleryBackground.fadeOut("500", function () {
-                galleryBackground.css('opacity', 0);
-            });
-           
-       } 
-    };
-    
-
-    
-    
-    engagementGallery.click(function () {
-        var href = "http://hungthemoonphotography.com/blog/engagement-gallery/#gallery-showcase";
-        //galleryFrame.attr("src", href);
-        $('#placeholder').animate({
-            top: 0
-        }, 750, function () {
-            window.location.href = href;
-        });
-    });
-
-    weddingGallery.click(function () {
-        var href = "http://hungthemoonphotography.com/blog/wedding-gallery/#gallery-showcase";
-        //galleryFrame.attr("src", href);
-        $('#placeholder').animate({
-            top: 0
-        }, 750, function () {
-            window.location.href = href;
-        });
-    });
-
-    maternityGallery.click(function () {
-        var href = "http://hungthemoonphotography.com/blog/maternity-gallery/#gallery-showcase";
-        //galleryFrame.attr("src", href);
-        $('#placeholder').animate({
-            top: 0
-        }, 750, function () {
-            window.location.href = href;
-        });
-    });
-
-    familyGallery.click(function () {
-        var href = "http://hungthemoonphotography.com/blog/family-gallery/#gallery-showcase";
-        //galleryFrame.attr("src", href);
-        $('#placeholder').animate({
-            top: 0
-        }, 750, function () {
-            window.location.href = href;
-        });
-    });
-
-    newbornGallery.click(function () {
-        var href = "http://hungthemoonphotography.com/blog/newborn-gallery/#gallery-showcase";
-        //galleryFrame.attr("src", href);
-        $('#placeholder').animate({
-            top: 0
-        }, 750, function () {
-            window.location.href = href;
-        });
-    });
-
-    kidsGallery.click(function () {
-        var href = "http://hungthemoonphotography.com/blog/kids-gallery/#gallery-showcase";
-        //galleryFrame.attr("src", href);
-        $('#placeholder').animate({
-            top: 0
-        }, 750, function () {
-            window.location.href = href;
-        });
-    });
-
-    seniorGallery.click(function () {
-        var href = "http://hungthemoonphotography.com/blog/senior-gallery/#gallery-showcase";
-        //galleryFrame.attr("src", href);
-        $('#placeholder').animate({
-            top: 0
-        }, 750, function () {
-            window.location.href = href;
-        });
-    });
-
-    charityGallery.click(function () {
-        var href = "http://hungthemoonphotography.com/blog/published-gallery/#gallery-showcase";
-        //galleryFrame.attr("src", href);
-        $('#placeholder').animate({
-            top: 0
-        }, 750, function () {
-            window.location.href = href;
-        });
-    });
-
-
-
-});
-//******************************************************************************
+//    });
+//
+//    weddingGallery.click(function () {
+//        var href = "http://hungthemoonphotography.com/blog/wedding-gallery/#gallery-showcase";
+//        //galleryFrame.attr("src", href);
+//        $('#placeholder').animate({
+//            top: 0
+//        }, 750, function () {
+//            window.location.href = href;
+//        });
+//    });
+//
+//    maternityGallery.click(function () {
+//        var href = "http://hungthemoonphotography.com/blog/maternity-gallery/#gallery-showcase";
+//        //galleryFrame.attr("src", href);
+//        $('#placeholder').animate({
+//            top: 0
+//        }, 750, function () {
+//            window.location.href = href;
+//        });
+//    });
+//
+//    familyGallery.click(function () {
+//        var href = "http://hungthemoonphotography.com/blog/family-gallery/#gallery-showcase";
+//        //galleryFrame.attr("src", href);
+//        $('#placeholder').animate({
+//            top: 0
+//        }, 750, function () {
+//            window.location.href = href;
+//        });
+//    });
+//
+//    newbornGallery.click(function () {
+//        var href = "http://hungthemoonphotography.com/blog/newborn-gallery/#gallery-showcase";
+//        //galleryFrame.attr("src", href);
+//        $('#placeholder').animate({
+//            top: 0
+//        }, 750, function () {
+//            window.location.href = href;
+//        });
+//    });
+//
+//    kidsGallery.click(function () {
+//        var href = "http://hungthemoonphotography.com/blog/kids-gallery/#gallery-showcase";
+//        //galleryFrame.attr("src", href);
+//        $('#placeholder').animate({
+//            top: 0
+//        }, 750, function () {
+//            window.location.href = href;
+//        });
+//    });
+//
+//    seniorGallery.click(function () {
+//        var href = "http://hungthemoonphotography.com/blog/senior-gallery/#gallery-showcase";
+//        //galleryFrame.attr("src", href);
+//        $('#placeholder').animate({
+//            top: 0
+//        }, 750, function () {
+//            window.location.href = href;
+//        });
+//    });
+//
+//    charityGallery.click(function () {
+//        var href = "http://hungthemoonphotography.com/blog/published-gallery/#gallery-showcase";
+//        //galleryFrame.attr("src", href);
+//        $('#placeholder').animate({
+//            top: 0
+//        }, 750, function () {
+//            window.location.href = href;
+//        });
+//    });
+//
+//
+//
+//});
+////******************************************************************************
 
 //detect bottom of page
 $(function () {

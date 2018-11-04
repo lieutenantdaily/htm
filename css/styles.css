@@ -1089,16 +1089,12 @@ clear:both;
 	position:relative;
     color:#878787;
 	font-family: 'Quicksand', sans-serif;
-    text-align: right;
-	font-size: 14pt;
-	z-index: 303;
-    margin-left:0px;
-	 display: inline-block;
     text-align: center;
-	opacity:0;
+	z-index: 303;
+    text-align: center;
     width:100%;
-
-
+    height: calc(200vh);
+    line-height: 0;
 }
 
 .block4-shell {
@@ -2658,4 +2654,53 @@ fieldset > ul > li {
 
 .ds2 {
     filter: drop-shadow(1px 1px 1px rgba(32,32,32,.2));
+}
+
+.gallery-text {
+    position: absolute;
+    left: 0;
+    width:100%;
+    margin-top: 50%;
+    color:#fff;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 50px;
+	text-align:center;
+    pointer-events: none;
+    display: inline-block;
+}
+
+.gallery-button1 {
+    background-image: url('/photos/slideshow/3.jpg');
+    
+}
+
+.gallery-button2 {
+    background-image: url('/photos/slideshow/4.jpg');
+    
+}
+
+.gallery-button {
+    display: inline-block;
+    width: 100%;
+    height: calc(100vh);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
+
+
+
+.gallery-linkall {
+    height: 0;
+}
+
+.gallery-fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    overflow: hidden;
 }
