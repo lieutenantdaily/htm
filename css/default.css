@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=raleway:100,200,500,600,800,900,400,700,300);
  html {
     height: 100%;
     min-height: 100%;
@@ -8,7 +7,7 @@
      -webkit-apperance: none;
 }
 body {
-    font-family: 'raleway', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin-top: 10px;
     margin: 0;
     padding: 0;
@@ -25,7 +24,7 @@ body {
     backface-visibility: hidden;
 }
 input {
-    font-family: 'raleway', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 12px;
 }
 h5 {
@@ -89,7 +88,6 @@ h1,
 h2,
 h3,
 h4 {
-    font-variant: small-caps;
 }
 h6 {
     text-align: left;
@@ -577,8 +575,8 @@ a.button {
 .nav a {
     color: #878787;
     text-decoration: none;
-    font-size: 1.1em;
-    font-family: 'raleway', sans-serif;
+    font-size: 22px;
+    font-family: 'Satisfy', cursive;
 }
 .nav.left a:hover {
     text-decoration: none;
@@ -592,7 +590,6 @@ a.button {
 }
 .nav-o {
     font-weight: bold;
-    font-variant: small-caps;
 }
 .nav-o li {
     /*border-right:1px solid #000;*/
@@ -605,7 +602,7 @@ a.button {
     color: #878787;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'raleway', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 .nav-o.left a:hover {
     text-decoration: none;
@@ -626,7 +623,7 @@ a.button {
     padding: 20px;
 }
 .close {
-    font-family: 'raleway', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: #434343;
     cursor: pointer;
     position: absolute;
@@ -976,7 +973,7 @@ span#email_warning b {
     margin-left: 0px;
     opacity: 1;
     height: 86px;
-    background: rgba(255, 255, 255, .92);
+/*    background: rgba(255, 255, 255, 0);*/
     left: 0px;
     width: 100%;
     /*box-shadow: 0px 0px 10px 0px black;
@@ -993,11 +990,31 @@ span#email_warning b {
     margin-left: 0px;
     opacity: 1;
     height: 86px;
+    background: rgba(255, 255, 255, .92);
+    left: 0px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px black;
+    border-radius: 0.5px;
+        -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: none;
+}
+
+#logo-background-blog {
+    position: fixed;
+    /*box-shadow: 0px 0px 15px 0px black;*/
+    margin-top: 0px;
+    /*border-top-right-radius:5px;
+    border-bottom-right-radius:5px;*/
+    z-index: 393;
+    margin-left: 0px;
+    opacity: 1;
+    height: 86px;
     background: rgba(32, 32, 32, .92);
     left: 0px;
     width: 100%;
-    /*box-shadow: 0px 0px 10px 0px black;
-    border-radius: 0.5px;*/
+    box-shadow: 0px 0px 10px 0px black;
+    border-radius: 0.5px;
     display: none;
 }
 #logo-background-shadow {
@@ -1010,11 +1027,14 @@ span#email_warning b {
     margin-left: 0px;
     opacity: 1;
     height: 86px;
-    background: rgba(255, 255, 255, .92);
+/*    background: rgba(255, 255, 255, .92);*/
     left: 0px;
     width: 100%;
+/*
     box-shadow: 0px 0px 10px 0px black;
     border-radius: 0.5px;
+*/
+
 }
 #welcome {
     background: #F5F5E2;
@@ -1091,7 +1111,6 @@ span#email_warning b {
     color: #f1f1f1;
     font-size: 20px;
     padding-top: 0px;
-    font-variant: small-caps;
 }
 #gallery-thumb {
     position: relative;
@@ -1110,17 +1129,18 @@ background-size: cover;
 #gallery-label {
     bottom: 0px;
     position: absolute;
-    background: rgba(67, 67, 67, .5);
+/*    background: rgba(67, 67, 67, .5);*/
     vertical-align: middle;
     /*box-shadow:0px 0px 10px 0px #878787;*/
     left: 0px;
     width: 100%;
     height: 37px;
     color: #f1f1f1;
-    font-size: 27px;
+    font-size: 25px;
     padding-top: 0px;
-    font-variant: small-caps;
-    font-weight: 700;
+    font-weight: 400;
+    font-family: 'Satisfy', cursive;
+    pointer-events: none;
 }
 #gallery-weddings {} #iOS-Scroll {
     height: 100%;
@@ -1225,7 +1245,6 @@ background-size: cover;
     color: #979797;
     width: 100%;
     left: 0;
-    font-variant: small-caps;
     font-weight: 200;
     display: none;
 }
@@ -1301,6 +1320,7 @@ background-size: cover;
     z-index:1999;
     /*box-shadow: 0px 0px 10px 0px black;*/
     display: none;
+    font-family: 'Satisfy', cursive;
 }
 .add-shadow {
     background: transparent;
@@ -1314,7 +1334,6 @@ background-size: cover;
     margin-left: 25px;
     top:10px;
     font-size: 35px;
-    font-variant: small-caps;
     z-index: 2001;
 }
 #mini-menu-item{
@@ -1323,7 +1342,6 @@ background-size: cover;
     padding-top:5px;
     padding-bottom:5px;
     font-size: 35px;
-    font-variant: small-caps;
     border-top:2px solid #878787;
     background: #fff;
     color: #878787;

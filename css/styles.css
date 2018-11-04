@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=raleway:400,700,300);
 
 *{
    margin:0;
@@ -53,7 +52,7 @@ strong {
 
 h1, h2, h3, h4, h5 {
 	color:#878787;
-	font-family: 'raleway', sans-serif;
+    font-family: 'Satisfy', cursive;
     text-align: left;
     font-size:24px;
     font-weight:700;
@@ -295,7 +294,7 @@ margin-left: 430px;
 z-index: 397;
 text-align: right;
 /*font-weight: bold;*/
-font-variant: small-caps;
+
 
     -webkit-appearance: none;
     -webkit-text-size-adjust: none;
@@ -329,7 +328,7 @@ font-variant: small-caps;
 	line-height:19px;
 	text-align: left;
 	font-size: 11pt;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	margin-left: 0.3in;
 	margin-right: 0.3in;
 }
@@ -338,7 +337,7 @@ font-variant: small-caps;
 	line-height:18px;
 	text-align: left;
 	font-size: 10pt;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	margin-left: 0.3in;
 	margin-right: 0.3in;
 }
@@ -347,7 +346,7 @@ font-variant: small-caps;
     color: #676767;
     text-align: left;
     font-size: 14pt;
-    font-family: raleway, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 0 19px 0 30px;
     padding: 5px 8px 0 0;
 }
@@ -388,21 +387,19 @@ font-variant: small-caps;
 
 .page-content-quick-links {
     color: #676767;
-    font-family: raleway, sans-serif;
+    font-family: 'Satisfy', cursive;
     font-size: 70px;
     padding-top: 5px;
     text-align: center;
     font-weight: 600;
-    font-variant: small-caps;
 }
 .page-content-quick-links-mini {
     color: #676767;
-    font-family: raleway, sans-serif;
+    font-family: 'Satisfy', cursive;
     font-size: 40px;
     padding-top: 5px;
     text-align: center;
     font-weight: 600;
-    font-variant: small-caps;
     margin-top: 15px;
 }
 
@@ -432,7 +429,7 @@ font-variant: small-caps;
 
 .faq-title {
 	color:#878787;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 35px;
 	padding-top:12px;
 	text-align:center;
@@ -443,7 +440,7 @@ font-variant: small-caps;
 	text-align:left;
 	text-align: left;
 	font-size: 20pt;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	margin-left: 0.3in;
 	margin-right: 0.3in;
 	margin:0px 19px 0px 30px;
@@ -458,7 +455,7 @@ font-variant: small-caps;
 	text-align:left;
 	text-align: left;
 	font-size: 15pt;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	margin-left: 0.3in;
 	margin-right: 0.3in;
 	margin:0px 19px 0px 30px;
@@ -477,32 +474,36 @@ font-variant: small-caps;
 
 
 .logo-image {
-  background-image: url('../image/logo@1x.png');
+  background-image: url('/image/logo-dark@1x.png');
   width: 302px;
   height: 96px;
+
 }
 
 @media	only screen and (-webkit-min-device-pixel-ratio:1.3),
 only screen and (-o-min-device-pixel-ratio:13/10),
 only screen and (min-resolution:120dpi) {
   .logo-image {
-    background-image: url('../image/logo@2x.png');
+    background-image: url('/image/logo-dark@2x.png');
     background-size: 302px 96px;
+
   }
 }
 
 .logo-image-dark {
-  background-image: url('../image/logo-dark@1x.png');
+  background-image: url('/image/logo@1x.png');
   width: 302px;
   height: 96px;
+
 }
 
 @media	only screen and (-webkit-min-device-pixel-ratio:1.3),
 only screen and (-o-min-device-pixel-ratio:13/10),
 only screen and (min-resolution:120dpi) {
   .logo-image-dark {
-    background-image: url('../image/logo-dark@2x.png');
+    background-image: url('/image/logo@2x.png');
     background-size: 302px 96px;
+
   }
 }
 
@@ -760,7 +761,6 @@ only screen and (min-resolution:120dpi) {
 	/* margin-left:415px; */
 	width: 110px;
     height: 110px;
-    background: rgba(255,255,255,.92);
     border-radius: 50%;
     border-color:#878787;
     border:0px solid;
@@ -771,7 +771,6 @@ only screen and (min-resolution:120dpi) {
     }
     
 .scroll-indicator:hover{
-	background: rgba(255,255,255,1);
 	/*border-color:#878787;
 	border:2px solid;*/
 }
@@ -841,7 +840,7 @@ height: auto;
 
 .social-icon {
     float: left;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
     color:#878787;
     font-size:15px;
     text-align:center;
@@ -851,7 +850,7 @@ height: auto;
 
 .social-label {
     float:left;
-font-family: 'raleway', sans-serif;
+font-family: 'Quicksand', sans-serif;
     color:#878787;
     font-size:11px;
     text-align:center;
@@ -877,7 +876,7 @@ font-family: 'raleway', sans-serif;
 
 
 .title-words {
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
     text-align: right;
 	font-size: 28pt;
 	font-weight:bold;
@@ -968,7 +967,7 @@ clear:both;
 
 .block1-text-title{
 	color:#5a5a5a;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
     text-align: left;
     font-size:24px;
     font-weight:700;
@@ -976,9 +975,9 @@ clear:both;
 
 .block1-text{
 	color:#878787;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size:18px;
-    font-weight:300;
+    font-weight:200;
     text-align: left;
     margin-top:5px;
 }
@@ -1089,7 +1088,7 @@ clear:both;
 .block3 {
 	position:relative;
     color:#878787;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
     text-align: right;
 	font-size: 14pt;
 	z-index: 303;
@@ -1192,7 +1191,7 @@ clear:both;
 .block5 {
 	position:relative;
     color:#878787;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
     text-align: right;
 	font-size: 14pt;
 	z-index: 303;
@@ -1205,7 +1204,7 @@ clear:both;
 .block6 {
 	position:relative;
     color:#878787;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 14pt;
 	z-index: 303;
     margin-left:0px;
@@ -1408,6 +1407,8 @@ clear:both;
     border-top-left-radius: 2px;
     background: rgba(255, 255, 255, .92);
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     overflow: hidden;
 }
 .picturefinal-mini {
@@ -1424,6 +1425,8 @@ clear:both;
     background: rgba(255, 255, 255, .92);
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     display:none;
 }
 
@@ -1502,7 +1505,7 @@ div.fademe {
 }
 
 .footer-text {
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
     color:#999;
     font-size:small;
     margin-right:10px;
@@ -1619,7 +1622,7 @@ fieldset > ul > li {
 
 .block1-text-list {
     color:#5a5a5a;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
     text-align: center;
     font-size:28px;
     font-weight:bold;
@@ -1663,7 +1666,7 @@ fieldset > ul > li {
 
 .link-list {
     color:#878787;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
     text-align: center;
     font-size:28px;
     text-decoration:none;
@@ -1860,7 +1863,7 @@ fieldset > ul > li {
     color:#5a5a5a;
 	text-align:center;
 	font-size: 13pt;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	margin-left: 0.3in;
 	margin-right: 0.3in;
 	margin:0px 19px 0px 30px;
@@ -1874,7 +1877,7 @@ fieldset > ul > li {
     color:#878787;
 	text-align:left;
 	font-size: 14pt;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	margin:0px 19px 0px 30px;
 }
 
@@ -1885,7 +1888,7 @@ fieldset > ul > li {
 	text-align:left;
 	font-size: 14pt;
     font-weight: bold;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
     padding-left: 27px;
     margin-top: 5px;
     width:149px;
@@ -1897,14 +1900,14 @@ fieldset > ul > li {
     color:#5a5a5a;
 	text-align:right;
 	font-size: 14pt;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
     margin-top: 5px;
     width:115px;
 }
 
 .page-content-number {
     color:#5a5a5a;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 25px;
 	padding-top:25px;
 	text-align:center;
@@ -1999,6 +2002,7 @@ fieldset > ul > li {
 	width: 80px;
     height: 80px;
     opacity:1;
+    
 }
 
 .inner-half-left {
@@ -2052,7 +2056,7 @@ fieldset > ul > li {
 
 .block1-text-center {
     	color:#878787;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size:18px;
     font-weight:300;
     text-align: center;
@@ -2064,7 +2068,7 @@ fieldset > ul > li {
 	text-align:left;
 	text-align: left;
 	font-size: 13pt;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	margin-left: 0.3in;
 	margin-right: 0.3in;
 	margin:0px 19px 0px 30px;
@@ -2193,6 +2197,7 @@ fieldset > ul > li {
 .block-box-morgan {
     margin-left: 0px;
     opacity:0;
+    
 }
 
 .block-box-welcome {
@@ -2465,11 +2470,10 @@ fieldset > ul > li {
 
 .gallery-title {
     color:#f1f1f1;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 35px;
 	padding-top:12px;
 	text-align:center;
-    font-variant: small-caps;
     pointer-events: none;
 }
 
@@ -2497,7 +2501,7 @@ fieldset > ul > li {
 }
 
 .expand {
-    font-family: 'raleway', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: #676767;
     cursor: pointer;
     position: absolute;
@@ -2564,7 +2568,11 @@ fieldset > ul > li {
 }
 
 .centerize {
-    margin-top: 0px;
+    margin-top: -115px;
+/*    filter: drop-shadow(rgba(32, 32, 32, 0.2) 2px 2px 1px);*/
+    text-shadow: 2px 2px 1px rgba(32, 32, 32, 0.2);
+    color: #fff;
+    font-size: 60px;
 }
 
 .bottom-base {
@@ -2584,7 +2592,6 @@ fieldset > ul > li {
     font-size: 22px;
     color: #f1f1f1;
     min- 
-    font-variant: small-caps;
     font-weight: 200;
     background: #676767:
     
@@ -2638,4 +2645,17 @@ fieldset > ul > li {
 .load-shell-center {
         z-index: 7002;
 
+}
+
+.nav-font {
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+}
+
+.ds1 {
+    filter: drop-shadow(2px 2px 1px rgba(32,32,32,.2));
+}
+
+.ds2 {
+    filter: drop-shadow(1px 1px 1px rgba(32,32,32,.2));
 }

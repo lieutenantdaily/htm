@@ -109,7 +109,7 @@ $(document).ready(function () {
         iframe.fadeOut(0);
 
         $('#email').css('visibility', 'visible');
-        $('.social3').css('border-top', 'solid 6px #878787');
+        //$('.social3').css('border-top', 'solid 6px #878787');
         $('.social-label3').css('opacity', '0');
         //$('#fs-background-transparent2').css("visibility","visible");
         $('#social-bar').css("visibility", "visible");
@@ -117,7 +117,7 @@ $(document).ready(function () {
     }
 
     $('.social3').click(function (e) {
-
+        
         e.preventDefault();
 
         var mobilecheck = 0;
@@ -152,6 +152,7 @@ $(document).ready(function () {
                 open = 1
                 $('#social-bar').fadeIn(0);
                 $('#blog').addClass("touchscroll");
+                $('#logo-background-blog').fadeIn(600);
                 var newMargin = 320;
                 //divs.animate({ marginLeft: newMargin }, SlideSpeed, function () { SetNavigationDisplay() });
                 if (ex == 1) {
@@ -173,6 +174,7 @@ $(document).ready(function () {
             if (ex == 0) {
                 w = $(window).width();
                 h = $(window).height();
+                
 
                 blogs.css({
                     width: w
@@ -505,7 +507,7 @@ $(document).ready(function () {
                 iframe.fadeOut(0);
 
                 $('#email').css('visibility', 'visible');
-                $('.social3').css('border-top', 'solid 6px #878787');
+//                $('.social3').css('border-top', 'solid 6px #878787');
                 
                 //$('#logo-background').fadeOut(200);
                 //$('#logo-background-dark').fadeIn(200);
@@ -525,7 +527,7 @@ $(document).ready(function () {
 
     $('.social1').click(function () {
 
-        window.location.href = 'https://www.instagram.com/morgan_hungthemoon/';
+        window.location.href = 'https://www.instagram.com/themorgan.knight/';
 
     });
 

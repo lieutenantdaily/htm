@@ -1,6 +1,6 @@
 //Detect Webkit**********************************************************
 $(document).ready(function () {
-
+    
 
 
     var isiPhone = navigator.userAgent.toLowerCase().indexOf("iphone");
@@ -51,6 +51,7 @@ $(document).ready(function () {
         $('#base-text').css('font-size', '22px');
         $('.light-text').css('color', '#c1c1c1');
         $('#base-text').css('color', '#c1c1c1');
+        $('.spacer').css('box-shadow', '0px 2px 0px 0px #fff');
 
     } else if (/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())) {
         
@@ -156,19 +157,25 @@ $(function () {
 
     if (distance < 550) {
         //alert('dark');
-        //$('#logo-background').fadeOut(0);
-        //$('#logo-background-dark').fadeIn(0);
+        $('#logo-background').fadeOut(0);
+        $('#logo-background-dark').fadeIn(0);
+        $('.ds1').css('filter','unset');
+        $('.ds2').css('filter','unset');
 
-        //$('#logo').fadeOut(0);
-        //$('#logo-dark').fadeIn(0);
+        $('#logo').fadeOut(0);
+        $('#logo-dark').fadeIn(0);
 
     } else {
         //alert('light');
-        //$('#logo-background-dark').fadeOut(0);
-        //$('#logo-background').fadeIn(0);
+        $('#logo-background-dark').fadeOut(0);
+        $('#logo-background').fadeIn(0);
+        $('.ds1').css('filter','unset');
+        $('.ds2').css('filter','unset');
+        $('.ds1').css('filter','drop-shadow(2px 2px 1px rgba(32,32,32,.2))');
+        $('.ds2').css('filter','drop-shadow(1px 1px 1px rgba(32,32,32,.2))');
 
-        //$('#logo-dark').fadeOut(0);
-        //$('#logo').fadeIn(0);
+        $('#logo-dark').fadeOut(0);
+        $('#logo').fadeIn(0);
 
     }
 
@@ -192,11 +199,13 @@ $(function () {
         //alert('contact');
 
         $('#loader').fadeIn(0);
-        //$('#logo-background').fadeOut(0);
-        //$('#logo-background-dark').fadeIn(0);
+        $('#logo-background').fadeOut(0);
+        $('#logo-background-dark').fadeIn(0);
+        $('.ds1').css('filter','unset');
+        $('.ds2').css('filter','unset');
 
-        //$('#logo').fadeOut(0);
-        //$('#logo-dark').fadeIn(0);
+        $('#logo').fadeOut(0);
+        $('#logo-dark').fadeIn(0);
 
         //$('.block3').delay(1500).animate({ opacity: 1 },500);
 
@@ -239,11 +248,13 @@ $(function () {
     if ((/morgan/.test(pathname))) {
         //alert('contact');
 
-        //$('#logo-background').fadeOut(0);
-        //$('#logo-background-dark').fadeIn(0);
+        $('#logo-background').fadeOut(0);
+        $('#logo-background-dark').fadeIn(0);
+        $('.ds1').css('filter','unset');
+        $('.ds2').css('filter','unset');
 
-        //$('#logo').fadeOut(0);
-        //$('#logo-dark').fadeIn(0);
+        $('#logo').fadeOut(0);
+        $('#logo-dark').fadeIn(0);
 
 
     }
@@ -251,11 +262,13 @@ $(function () {
     if ((/pricing/.test(pathname))) {
         //alert('contact');
 
-        //$('#logo-background').fadeOut(0);
-        //$('#logo-background-dark').fadeIn(0);
+        $('#logo-background').fadeOut(0);
+        $('#logo-background-dark').fadeIn(0);
+        $('.ds1').css('filter','unset');
+        $('.ds2').css('filter','unset');
 
-        //$('#logo').fadeOut(0);
-        //$('#logo-dark').fadeIn(0);
+        $('#logo').fadeOut(0);
+        $('#logo-dark').fadeIn(0);
 
 
     }
@@ -263,11 +276,13 @@ $(function () {
     if ((/contact/.test(pathname))) {
         //alert('contact');
 
-        //$('#logo-background').fadeOut(0);
-        //$('#logo-background-dark').fadeIn(0);
+        $('#logo-background').fadeOut(0);
+        $('#logo-background-dark').fadeIn(0);
+        $('.ds1').css('filter','unset');
+        $('.ds2').css('filter','unset');
 
-        //$('#logo').fadeOut(0);
-        //$('#logo-dark').fadeIn(0);
+        $('#logo').fadeOut(0);
+        $('#logo-dark').fadeIn(0);
 
 
     }
@@ -279,19 +294,23 @@ $(function () {
         distance = (elementOffset - scrollTop);
 
         if (distance < 550) {
-            //$('#logo-background').fadeOut(600);
-            //$('#logo-background-dark').fadeIn(600);
+            $('#logo-background').fadeOut(600);
+            $('#logo-background-dark').fadeIn(600);
+            $('.ds1').css('filter','unset');
+            $('.ds2').css('filter','unset');
 
-            //$('#logo').fadeOut(600);
-            //$('#logo-dark').fadeIn(600);
+            $('#logo').fadeOut(600);
+            $('#logo-dark').fadeIn(600);
             //alert('dark');
 
         } else {
-            //$('#logo-background-dark').fadeOut(600);
-            //$('#logo-background').fadeIn(600);
+            $('#logo-background-dark').fadeOut(600);
+            $('#logo-background').fadeIn(600);
+            $('.ds1').css('filter','drop-shadow(2px 2px 1px rgba(32,32,32,.2))');
+            $('.ds2').css('filter','drop-shadow(1px 1px 1px rgba(32,32,32,.2))');
 
-            //$('#logo-dark').fadeOut(600);
-            //$('#logo').fadeIn(600);
+            $('#logo-dark').fadeOut(600);
+            $('#logo').fadeIn(600);
             //alert('light');
 
         }
@@ -642,7 +661,6 @@ $(function () {
             });
             done = 1;
         }
-
     });
 
     $(window).on('scroll', function () {
@@ -1445,6 +1463,9 @@ $(function () {
     var charityGallery = $('.gallery-thumb8');
 
     var h = $(window).height();
+    
+    galleryBackground.css('opacity', 0);
+    galleryBackground.css('pointer-events', 'none');
 
     galleryShell.css('margin-top', h);
 
@@ -1459,8 +1480,11 @@ $(function () {
 
 
     gallery.click(function () {
-
+        galleryBackground.css('opacity', 1);
         galleryBackground.fadeIn(500);
+//        galleryBackground.fadeIn("500", function () {
+//            galleryBackground.css('opacity', 0);
+//        });
 
         //galleryShell.fadeIn(0);
 
@@ -1473,7 +1497,21 @@ $(function () {
 
 
     });
+    
+    
+    window.onscroll = function () {
+       if (galleryBackground.css('opacity') == 1) {
+           
+            galleryBackground.fadeOut("500", function () {
+                galleryBackground.css('opacity', 0);
+            });
+           
+       } 
+    };
+    
 
+    
+    
     engagementGallery.click(function () {
         var href = "http://hungthemoonphotography.com/blog/engagement-gallery/#gallery-showcase";
         //galleryFrame.attr("src", href);
