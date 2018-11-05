@@ -2749,12 +2749,18 @@ fieldset > ul > li {
     
 }
 
-.gallery-button:hover {
+.gallery-button.animate {
 
-    transform: scale(1.1);
+    transform: scale(1.2);
     opacity: .79;
-    transition-delay:.7s;
+
     
+    
+}
+
+.gallery-text.animate {
+
+    opacity: 1;
     
 }
 
@@ -2806,7 +2812,7 @@ fieldset > ul > li {
 
 .hover-button:hover {
     
-    background: #ff9933;
+/*    background: #ff9933;*/
 }
 
 .featured-image {
