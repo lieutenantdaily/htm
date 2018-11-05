@@ -146,6 +146,54 @@ $(function () {
 });
 //****************************************************************************
 
+//Gallery Scroll Text**********************************************************
+$(function () {
+
+    
+
+    $.fn.isInViewport = function() {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+
+    $(window).on('resize, scroll', function() {
+        
+        $('.gallery-button').addClass('disable-hover');
+        
+        $('.hover-button').each(function() {
+            var thisID = $(this).attr('id');
+            var thisID = thisID.replace("button", "text");
+            var thisID = thisID.replace("hover", "gallery");
+            if ($(this).isInViewport()) {
+                var offsetCheck = $(this).offset().top - $(window).scrollTop();
+                var vHeight = $(window).height();
+                var aCenter = (offsetCheck) + (vHeight * .5);
+                $('#'+thisID).css('top', (vHeight/2.5) + aCenter/4);
+            } else {
+                $('#'+thisID).css('top', '50%');
+            }
+        });
+        
+        timer = setTimeout(function(){
+            $('.gallery-button').removeClass('disable-hover');
+        },500);
+        
+    });
+
+
+});
+//****************************************************************************
+
+
+
+
+
+
 
 //Fade Dark - logo-background**********************************************************
 $(function () {
@@ -543,12 +591,12 @@ $(function () {
     //alert(distance);
 
     //Slideshow***********************    
-    if (distance < 145) {
+    if (distance < 75) {
         $("#slideshow").fadeOut(0);
     }
 
 
-    if (distance >= 145) {
+    if (distance >= 75) {
         $("#slideshow").fadeIn(0);
     }
     //Slideshow***********************
@@ -566,12 +614,12 @@ $(function () {
 
         //Slideshow***********************    
         if ($("#slideshow").is(':visible')) {
-            if (distance < 145) {
+            if (distance < 75) {
                 $("#slideshow").fadeOut(0);
             }
         }
         if ($("#slideshow").is(':hidden')) {
-            if (distance >= 145) {
+            if (distance >= 75) {
                 $("#slideshow").fadeIn(0);
             }
         }
@@ -1444,6 +1492,154 @@ $(function () {
 
 }); //]]>
 //******************************************************************************
+
+
+
+//Galleries*********************************************************************
+$(function () {
+
+    var galleryBackground = $('#gallery-background');
+    var gallery = $('.gallery-button');
+
+    var engagementGallery = $('.gallery-button1');
+    var weddingGallery = $('.gallery-button2');
+    var maternityGallery = $('.gallery-button3');
+    var familyGallery = $('.gallery-button4');
+    var newbornGallery = $('.gallery-button5');
+    var kidsGallery = $('.gallery-button6');
+    var seniorGallery = $('.gallery-button7');
+    var charityGallery = $('.gallery-button8');
+
+    var h = $(window).height();
+    
+    galleryBackground.css('opacity', 0);
+    galleryBackground.css('pointer-events', 'none');
+
+
+
+
+
+
+
+    gallery.click(function () {
+        galleryBackground.css('opacity', 1);
+        galleryBackground.fadeIn(500);
+//        galleryBackground.fadeIn("500", function () {
+//            galleryBackground.css('opacity', 0);
+//        });
+
+        //galleryShell.fadeIn(0);
+
+        /*galleryShell.animate({
+            marginTop: 0
+        }, {
+            duration: 1000,
+            queue: false
+        });*/
+
+
+    });
+    
+    
+    window.onscroll = function () {
+       if (galleryBackground.css('opacity') == 1) {
+           
+            galleryBackground.fadeOut("500", function () {
+                galleryBackground.css('opacity', 0);
+            });
+           
+       } 
+    };
+    
+    
+    engagementGallery.click(function () {
+        var href = "http://hungthemoonphotography.com/blog/engagement-gallery/#gallery-showcase";
+        //galleryFrame.attr("src", href);
+        $('#placeholder').animate({
+            top: 0
+        }, 750, function () {
+            window.location.href = href;
+        });
+    });
+
+    weddingGallery.click(function () {
+        var href = "http://hungthemoonphotography.com/blog/wedding-gallery/#gallery-showcase";
+        //galleryFrame.attr("src", href);
+        $('#placeholder').animate({
+            top: 0
+        }, 750, function () {
+            window.location.href = href;
+        });
+    });
+
+    maternityGallery.click(function () {
+        var href = "http://hungthemoonphotography.com/blog/maternity-gallery/#gallery-showcase";
+        //galleryFrame.attr("src", href);
+        $('#placeholder').animate({
+            top: 0
+        }, 750, function () {
+            window.location.href = href;
+        });
+    });
+
+    familyGallery.click(function () {
+        var href = "http://hungthemoonphotography.com/blog/family-gallery/#gallery-showcase";
+        //galleryFrame.attr("src", href);
+        $('#placeholder').animate({
+            top: 0
+        }, 750, function () {
+            window.location.href = href;
+        });
+    });
+
+    newbornGallery.click(function () {
+        var href = "http://hungthemoonphotography.com/blog/newborn-gallery/#gallery-showcase";
+        //galleryFrame.attr("src", href);
+        $('#placeholder').animate({
+            top: 0
+        }, 750, function () {
+            window.location.href = href;
+        });
+    });
+
+    kidsGallery.click(function () {
+        var href = "http://hungthemoonphotography.com/blog/kids-gallery/#gallery-showcase";
+        //galleryFrame.attr("src", href);
+        $('#placeholder').animate({
+            top: 0
+        }, 750, function () {
+            window.location.href = href;
+        });
+    });
+
+    seniorGallery.click(function () {
+        var href = "http://hungthemoonphotography.com/blog/senior-gallery/#gallery-showcase";
+        //galleryFrame.attr("src", href);
+        $('#placeholder').animate({
+            top: 0
+        }, 750, function () {
+            window.location.href = href;
+        });
+    });
+
+    charityGallery.click(function () {
+        var href = "http://hungthemoonphotography.com/blog/published-gallery/#gallery-showcase";
+        //galleryFrame.attr("src", href);
+        $('#placeholder').animate({
+            top: 0
+        }, 750, function () {
+            window.location.href = href;
+        });
+    });
+    
+
+
+
+
+});
+//******************************************************************************
+
+
 
 ////Galleries*********************************************************************
 //$(function () {

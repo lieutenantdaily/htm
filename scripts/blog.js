@@ -153,6 +153,8 @@ $(document).ready(function () {
                 $('#social-bar').fadeIn(0);
                 $('#blog').addClass("touchscroll");
                 $('#logo-background-blog').fadeIn(600);
+                $('#logo-background').fadeOut(600);
+                $('#logo-background-dark').fadeOut(600);
                 var newMargin = 320;
                 //divs.animate({ marginLeft: newMargin }, SlideSpeed, function () { SetNavigationDisplay() });
                 if (ex == 1) {
