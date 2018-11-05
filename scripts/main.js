@@ -1542,6 +1542,8 @@ $(function () {
     gallery.click(function () {
         galleryBackground.css('opacity', 1);
         galleryBackground.fadeIn(500);
+        $('.gallery-text').removeClass('animate');
+        $('.gallery-button').removeClass('animate');
 //        galleryBackground.fadeIn("500", function () {
 //            galleryBackground.css('opacity', 0);
 //        });
