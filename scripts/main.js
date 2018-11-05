@@ -84,14 +84,14 @@ $(document).ready(function () {
 
     }
 
-//    $('#engagement').load('../blog/engagement-gallery/ #featured_image');
-//    $('#wedding').load('../blog/wedding-gallery/ #featured_image');
-//    $('#maternity').load('../blog/maternity-gallery/ #featured_image');
-//    $('#family').load('../blog/family-gallery/ #featured_image');
-//    $('#newborn').load('../blog/newborn-gallery/ #featured_image');
-//    $('#kids').load('../blog/kids-gallery/ #featured_image');
-//    $('#senior').load('../blog/senior-gallery/ #featured_image');
-//    $('#published').load('../blog/published-gallery/ #featured_image');
+    $('#gallery-button1').load('../blog/engagement-gallery/ #featured_image');
+    $('#gallery-button2').load('../blog/wedding-gallery/ #featured_image');
+    $('#gallery-button3').load('../blog/maternity-gallery/ #featured_image');
+    $('#gallery-button4').load('../blog/family-gallery/ #featured_image');
+    $('#gallery-button5').load('../blog/newborn-gallery/ #featured_image');
+    $('#gallery-button6').load('../blog/kids-gallery/ #featured_image');
+    $('#gallery-button7').load('../blog/senior-gallery/ #featured_image');
+    $('#gallery-button8').load('../blog/published-gallery/ #featured_image');
 
 
 
