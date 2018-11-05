@@ -52,7 +52,7 @@ strong {
 
 h1, h2, h3, h4, h5 {
 	color:#878787;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Yesteryear', cursive;
     text-align: left;
     font-size:24px;
     font-weight:700;
@@ -289,7 +289,7 @@ ul.list > li:last-child {
 .navigation-top {
 position: absolute;
 width: 540px;
-top: 19px;
+top: 21px;
 margin-left: 430px;
 z-index: 397;
 text-align: right;
@@ -395,7 +395,7 @@ text-align: right;
 }
 .page-content-quick-links-mini {
     color: #676767;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Yesteryear', cursive;
     font-size: 40px;
     padding-top: 5px;
     text-align: center;
@@ -2651,8 +2651,8 @@ fieldset > ul > li {
 }
 
 .nav-font {
-    font-family: 'Satisfy', cursive;
-    font-size: 20px;
+    font-family: 'Yesteryear', cursive;
+    font-size: 22px;
 }
 
 .ds1 {
@@ -2670,14 +2670,14 @@ fieldset > ul > li {
     height: 50%;
     top: 50%;
     color:#fff;
-	font-family: 'Satisfy', cursive;
+	font-family: 'Yesteryear', cursive;
 	font-size: calc(20vw);
     font-weight: 800;
 	text-align:center;
     pointer-events: none;
     display: inline-block;
     text-shadow: 2px 2px 1px rgba(32, 32, 32, 0.2);
-    opacity: .7;
+    opacity: .8;
     pointer-events: none;
 }
 
