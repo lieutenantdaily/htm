@@ -163,7 +163,7 @@ $(function () {
 
     $(window).on('resize, scroll', function() {
         
-        $('.gallery-button').addClass('disable-hover');
+//        $('.gallery-button').addClass('disable-hover');
         
         $('.hover-button').each(function() {
             var thisID = $(this).attr('id');
@@ -179,9 +179,9 @@ $(function () {
             }
         });
         
-        timer = setTimeout(function(){
-            $('.gallery-button').removeClass('disable-hover');
-        },500);
+//        timer = setTimeout(function(){
+//            $('.gallery-button').removeClass('disable-hover');
+//        },1000);
         
     });
 

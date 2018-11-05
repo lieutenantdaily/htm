@@ -2693,6 +2693,7 @@ fieldset > ul > li {
   }
 }
 
+/*
 .gallery-button1 {
     background-image: url('/photos/slideshow/3.jpg');
     
@@ -2732,6 +2733,7 @@ fieldset > ul > li {
     background-image: url('/photos/slideshow/4.jpg');
     
 }
+*/
 
 .gallery-button {
     position: relative;
@@ -2751,7 +2753,7 @@ fieldset > ul > li {
 
     transform: scale(1.1);
     opacity: .79;
-    transition-delay:.1s;
+    transition-delay:.7s;
     
     
 }
@@ -2805,4 +2807,14 @@ fieldset > ul > li {
 .hover-button:hover {
     
     background: #ff9933;
+}
+
+.featured-image {
+
+    min-height: 215px;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    pointer-events: none;
+
 }
