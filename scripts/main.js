@@ -88,10 +88,10 @@ $(document).ready(function () {
     $('#gallery-button2').load('../blog/wedding-gallery/ #featured_image');
     $('#gallery-button3').load('../blog/maternity-gallery/ #featured_image');
     $('#gallery-button4').load('../blog/family-gallery/ #featured_image');
-    $('#gallery-button5').load('../blog/newborn-gallery/ #featured_image');
-    $('#gallery-button6').load('../blog/kids-gallery/ #featured_image');
-    $('#gallery-button7').load('../blog/senior-gallery/ #featured_image');
-    $('#gallery-button8').load('../blog/published-gallery/ #featured_image');
+//    $('#gallery-button5').load('../blog/newborn-gallery/ #featured_image');
+//    $('#gallery-button6').load('../blog/kids-gallery/ #featured_image');
+//    $('#gallery-button7').load('../blog/senior-gallery/ #featured_image');
+//    $('#gallery-button8').load('../blog/published-gallery/ #featured_image');
 
 
 

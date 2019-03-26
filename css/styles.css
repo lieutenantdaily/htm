@@ -1094,6 +1094,8 @@ clear:both;
     width:100%;
     line-height: 0;
     overflow: hidden;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .block4-shell {
@@ -2739,7 +2741,7 @@ fieldset > ul > li {
     position: relative;
     transition: all 0.3s ease-in-out;
     width: 100%;
-    height: calc(100vh);
+    height: 200px;
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -2798,17 +2800,34 @@ fieldset > ul > li {
 .hover-button {
     position: relative;
     overflow: hidden;
-    height: 100vh;
-    width: 100%;
+    height: 200px;
+    width: 70%;
     background: black;
 /*
-    background-image:
-    radial-gradient(
-      #ff9933,
-      black
-    );
+    margin: 60px;
+    margin-left: 15%;
+    margin-right: 15%;
+    
 */
+    max-width: 700px;
+    display: inline-block;
+    border-radius: 2px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 2px 2.5px rgba(32,32,32,.2)
 }
+
+@media (min-width:690px) {
+    
+    .hover-button {
+        max-width: 700px;
+        margin-left: calc(50% - 350px);
+        margin-right: calc(50% - 350px);
+    }
+    
+}
+
+
 
 .hover-button:hover {
     
