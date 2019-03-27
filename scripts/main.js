@@ -146,48 +146,48 @@ $(function () {
 });
 //****************************************************************************
 
-//Gallery Scroll Text**********************************************************
-$(function () {
-    
-
-
-    $.fn.isInViewport = function() {
-      var elementTop = $(this).offset().top;
-      var elementBottom = elementTop + $(this).outerHeight();
-
-      var viewportTop = $(window).scrollTop();
-      var viewportBottom = viewportTop + $(window).height();
-
-      return elementBottom > viewportTop && elementTop < viewportBottom;
-    };
-
-    $(window).on('resize, scroll', function() {
-        
-//        $('.gallery-button').addClass('disable-hover');
-        
-        $('.hover-button').each(function() {
-            var thisID = $(this).attr('id');
-            var thisID = thisID.replace("button", "text");
-            var thisID = thisID.replace("hover", "gallery");
-            if ($(this).isInViewport()) {
-                var offsetCheck = $(this).offset().top - $(window).scrollTop();
-                var vHeight = $(window).height();
-                var aCenter = (offsetCheck) + (vHeight * .5);
-                $('#'+thisID).css('top', (vHeight/2.5) + aCenter/4);
-            } else {
-                $('#'+thisID).css('top', '50%');
-            }
-        });
-        
-//        timer = setTimeout(function(){
-//            $('.gallery-button').removeClass('disable-hover');
-//        },500);
-        
-    });
-
-
-});
-//****************************************************************************
+////Gallery Scroll Text**********************************************************
+//$(function () {
+//    
+//
+//
+//    $.fn.isInViewport = function() {
+//      var elementTop = $(this).offset().top;
+//      var elementBottom = elementTop + $(this).outerHeight();
+//
+//      var viewportTop = $(window).scrollTop();
+//      var viewportBottom = viewportTop + $(window).height();
+//
+//      return elementBottom > viewportTop && elementTop < viewportBottom;
+//    };
+//
+//    $(window).on('resize, scroll', function() {
+//        
+////        $('.gallery-button').addClass('disable-hover');
+//        
+//        $('.hover-button').each(function() {
+//            var thisID = $(this).attr('id');
+//            var thisID = thisID.replace("button", "text");
+//            var thisID = thisID.replace("hover", "gallery");
+//            if ($(this).isInViewport()) {
+//                var offsetCheck = $(this).offset().top - $(window).scrollTop();
+//                var vHeight = $(window).height();
+//                var aCenter = (offsetCheck) + (vHeight * .5);
+//                $('#'+thisID).css('top', (vHeight/2.5) + aCenter/4);
+//            } else {
+//                $('#'+thisID).css('top', '50%');
+//            }
+//        });
+//        
+////        timer = setTimeout(function(){
+////            $('.gallery-button').removeClass('disable-hover');
+////        },500);
+//        
+//    });
+//
+//
+//});
+////****************************************************************************
 
 
 

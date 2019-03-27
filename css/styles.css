@@ -1094,8 +1094,8 @@ clear:both;
     width:100%;
     line-height: 0;
     overflow: hidden;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .block4-shell {
@@ -2666,21 +2666,29 @@ fieldset > ul > li {
 }
 
 .gallery-text {
-    position: absolute;
-    left: 0;
-    width:100%;
-    height: 50%;
-    top: 50%;
-    color:#fff;
-	font-family: 'Satisfy', cursive;
-	font-size: calc(20vw);
-    font-weight: 800;
-	text-align:center;
+    float: right;
+    color:#414141;
+	font-family: 'Arial';
+	font-size: calc(10vw);
+    font-weight: 200;
     pointer-events: none;
-    display: inline-block;
     text-shadow: 2px 2px 1px rgba(32, 32, 32, 0.2);
-    opacity: .7;
+    opacity: 1;
     pointer-events: none;
+    background-color: rgba(200,200,200,.9);
+    background: url(/image/pattern1.png);
+    background-repeat: repeat;
+    background-size:auto;
+    border-radius: 0px;
+    box-shadow: 0px 0px 2px 2.5px rgba(32,32,32,.2);
+    padding: calc(4vw);
+    padding-top: calc(7vw);
+    padding-bottom: calc(7vw);
+    margin-top: calc(100px - 7vw);
+    margin-right: calc(-8vw);
+    
+
+        
 }
 
 .disable-hover {
@@ -2691,28 +2699,32 @@ fieldset > ul > li {
 
 @media screen and (min-width: 940px) {
   .gallery-text {
-     font-size: 160px;
+     font-size: 95px;
+        padding-top: 66px;
+        padding-bottom: 66px;
+          margin-top: calc(100px - 66px);
   }
 }
 
-/*
 .gallery-button1 {
     background-image: url('/photos/slideshow/3.jpg');
     
 }
 
 .gallery-button2 {
-    background-image: url('/photos/slideshow/4.jpg');
-    
-}
-
-.gallery-button3 {
     background-image: url('/photos/slideshow/5.jpg');
     
 }
 
-.gallery-button4 {
+.gallery-button3 {
     background-image: url('/photos/slideshow/6.jpg');
+    background-size: cover;
+    background-position: top 200px right 200px;
+    
+}
+
+.gallery-button4 {
+    background-image: url('/photos/slideshow/4.jpg');
     
 }
 
@@ -2735,7 +2747,6 @@ fieldset > ul > li {
     background-image: url('/photos/slideshow/4.jpg');
     
 }
-*/
 
 .gallery-button {
     position: relative;
@@ -2745,9 +2756,10 @@ fieldset > ul > li {
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
-    overflow: hidden;
+/*    overflow: hidden;*/
     font-size: 100px;
     transition-delay: 0s;
+    text-align: right;
     
 }
 
@@ -2799,7 +2811,7 @@ fieldset > ul > li {
 
 .hover-button {
     position: relative;
-    overflow: hidden;
+/*    overflow: hidden;*/
     height: 200px;
     width: 70%;
     background: black;
@@ -2809,20 +2821,24 @@ fieldset > ul > li {
     margin-right: 15%;
     
 */
-    max-width: 700px;
+    max-width: 900px;
     display: inline-block;
     border-radius: 2px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    box-shadow: 0px 0px 2px 2.5px rgba(32,32,32,.2)
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 2px 2.5px rgba(32,32,32,.2);
+    text-align: center;
+    clear: both;
 }
 
 @media (min-width:690px) {
     
     .hover-button {
-        max-width: 700px;
-        margin-left: calc(50% - 350px);
-        margin-right: calc(50% - 350px);
+        max-width: 900px;
+/*
+        margin-left: calc(50% - 450px);
+        margin-right: calc(50% - 450px);
+*/
     }
     
 }
