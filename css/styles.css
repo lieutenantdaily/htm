@@ -52,7 +52,7 @@ strong {
 
 h1, h2, h3, h4, h5 {
 	color:#878787;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Roboto Slab', serif;
     text-align: left;
     font-size:24px;
     font-weight:700;
@@ -387,7 +387,7 @@ text-align: right;
 
 .page-content-quick-links {
     color: #676767;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Roboto Slab', serif;
     font-size: 70px;
     padding-top: 5px;
     text-align: center;
@@ -395,7 +395,7 @@ text-align: right;
 }
 .page-content-quick-links-mini {
     color: #676767;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Roboto Slab', serif;
     font-size: 40px;
     padding-top: 5px;
     text-align: center;
@@ -2651,7 +2651,7 @@ fieldset > ul > li {
 }
 
 .nav-font {
-    font-family: 'Satisfy', cursive;
+    font-family: 'Roboto Slab', serif;
     font-size: 20px;
 }
 
@@ -2670,9 +2670,9 @@ fieldset > ul > li {
     height: 50%;
     top: 50%;
     color:#fff;
-	font-family: 'Satisfy', cursive;
-	font-size: calc(20vw);
-    font-weight: 800;
+	font-family: 'Roboto Slab', serif;
+	font-size: calc(18vw);
+    font-weight: 400;
 	text-align:center;
     pointer-events: none;
     display: inline-block;
@@ -2693,7 +2693,7 @@ fieldset > ul > li {
   }
 }
 
-/*
+
 .gallery-button1 {
     background-image: url('/photos/slideshow/3.jpg');
     
@@ -2710,7 +2710,7 @@ fieldset > ul > li {
 }
 
 .gallery-button4 {
-    background-image: url('/photos/slideshow/6.jpg');
+    background-image: url('/photos/gallery/family.jpg');
     
 }
 
@@ -2720,7 +2720,7 @@ fieldset > ul > li {
 }
 
 .gallery-button6 {
-    background-image: url('/photos/slideshow/2.jpg');
+    background-image: url('/photos/gallery/kids.jpg');
     
 }
 
@@ -2733,7 +2733,7 @@ fieldset > ul > li {
     background-image: url('/photos/slideshow/4.jpg');
     
 }
-*/
+
 
 .gallery-button {
     position: relative;
